@@ -161,3 +161,16 @@
   -webkit-background-clip: @argument;
   background-clip: @argument;
 }
+
+
+.placeholder(@color: #fff){
+	&::-webkit-input-placeholder {color:@color;}
+	&::-moz-placeholder          {color:@color;}/* Firefox 19+ */
+	&:-moz-placeholder           {color:@color;}/* Firefox 18- */
+	&:-ms-input-placeholder      {color:@color;}
+
+	&:focus::-webkit-input-placeholder {line-height: 100px; transition: line-height 0.5s ease;}
+	&:focus::-moz-placeholder          {line-height: 100px; transition: line-height 0.5s ease;}
+	&:focus:-moz-placeholder           {line-height: 100px; transition: line-height 0.5s ease;}
+	&:focus:-ms-input-placeholder      {line-height: 100px; transition: line-height 0.5s ease;}	
+}

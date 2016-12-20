@@ -35,7 +35,7 @@ html {
 
 
 body{
-	font-family: Arial;
+	font-family: "AvenirNextCyr-Regular", Arial;
 	font-display: swap;
 	font-size:10px;
 	font-size: 1.6rem;
@@ -44,6 +44,41 @@ body{
 html, body{
 	height: 100%
 }
+
+
+/* font-family: "MyriadProRegular"; */
+@font-face {
+	font-family: "AvenirNextCyr-Regular";
+	src: url("../fonts/AvenirNextCyr-Regular.otf") format("opentype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+.regular{font-family: "AvenirNextCyr-Regular";}
+
+
+
+@font-face {
+	font-family: "AvenirNextCyr-Demi";
+	src: url("../fonts/AvenirNextCyr-Demi.otf") format("opentype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+.demi{font-family: "AvenirNextCyr-Demi";}
+
+
+
+@font-face {
+	font-family: "AvenirNextCyr-Light";
+	src: url("../fonts/AvenirNextCyr-Light.otf") format("opentype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+.light{font-family: "AvenirNextCyr-Light";}
+
+
 
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
@@ -143,11 +178,12 @@ input::-moz-focus-inner{
 	.font-size(1.6);
 	.rounded(4.8rem);
 	.transition;
+	.demi;
 	background: @color6;
 	background:linear-gradient(to right, #ffce55, #ffe650);
 	border: 2px solid @color2;
 	cursor: pointer;
-	height: 4.8rem;
+	height: 5.2rem;
 	padding-left: 5rem;
 	padding-right: 5rem;
 	text-align: center;
@@ -158,7 +194,7 @@ input::-moz-focus-inner{
 }
 
 .btn-white{
-	background-color: @color2;
+	background: @color2 !important;
 	border-color: @color4;
 	color: @color1;
 }
@@ -171,9 +207,12 @@ input::-moz-focus-inner{
 
 .title{
 	.font-size(3.6);
-	font-weight: bold;
+	padding-bottom: 2.3rem;
 	text-align: center;
-	padding-bottom: 2.5rem;
+	.demi;
+	strong{
+		.demi;
+	}
 }
 
 .subtitle{
