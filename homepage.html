@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="ru">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="" />
@@ -12,13 +12,12 @@
 <meta name="robots" content="noindex,nofollow" />
 
 <title>Главная</title>
-<!-- <link rel="stylesheet" href="css/bootstrap.min.css" /> -->
 <!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"> -->
+<link rel="stylesheet" href="css/jquery.fullPage.css" />
 <link rel="stylesheet" href="css/styles.css" />
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="/js/jquery-1.12.4.min.js"><\/script>')</script>
-
 
 <!--[if IE]>
 	<link href="css/styles-ie.css" rel="stylesheet" type="text/css" />
@@ -32,27 +31,120 @@
 	<script type="text/javascript" src="js/selectivizr.js"></script>
 <![endif]-->
 
-<!--[if lte IE 6]>
-	<meta http-equiv="refresh" content="0; url=http://yoursite.com/ie6/ie6.html">
-<![endif]-->
 </head>
 <body>
 
-<div class="outerwrapper">
-    <header>А я тут вместо головы.</header>
-    <div class="main">
-		Пароль отправляется серверу в «открытом» виде — он шифруется известным алгоритмом на известном ключе. При использовании простого логина, пароль пользователя может быть перехвачен и дешифрирован.
-    </div>
-</div>
 
-<footer>
-	<div class="wrapper">
-		А тут у меня — ноги приделаны.
+<div id="fullpage">
+	<!-- =section1 -->
+	<div id="section1" class="section">
+		<!-- =header -->
+		<div class="flex flexv">
+			<header>
+				<div class="flexrow wrapper containerw">
+					<div class="logo">
+						<img src="images/logo.png" alt="Global Financial Broker" />
+					</div>
+					<div class="right">
+						<a href="skype:GFB_INFO?chat" class="skype">GFB_INFO</a>
+						<div class="lang">
+							<select name="lang" id="lang">
+								<li>РУССКИЙ</li>
+								<li>English</li>
+							</select>
+						</div>
+						<div class="auth in">
+							<a href="#" title="Вход" class="auth_link">Вход</a>
+						</div>
+					</div>
+				</div>
+			</header>
+			<!-- =/header -->
+
+			<!-- =main -->
+			<div class="main">
+				<div class="plate">
+					<p class="title">Инвестиционная платформа для финансового успеха</p>
+					<div class="form">
+						<input type="text" class="form-control" value="" placeholder="ВВЕДИТЕ E-MAIL" />
+						<button type="button" class="btn btn-white">Попробовать</button> 
+					</div>
+				</div>
+				<div class="vsfc"><img src="images/vsfc.png" alt=""></div>
+			</div>
+			<!-- =/main -->
+
+			<!-- =benefits -->
+			<div class="benefits">
+				<div class="container">
+					<div class="cell">
+						<div class="pic">
+							<img src="images/benefit-1.png" alt="" />
+						</div>
+						<div class="text">
+							<p><strong>Моментальное исполнение!</strong></p>
+							<p>Самое быстрое исполнение на рынке!</p>
+						</div>
+					</div>
+					<div class="cell">
+						<div class="pic">
+							<img src="images/benefit-2.png" alt="" />
+						</div>
+						<div class="text">
+							<p><strong>Самое быстрое исполнение</strong></p>
+							<p>Уникальные возможности прогнозирования тренда</p>
+						</div>
+					</div>
+					<div class="cell">
+						<div class="pic">
+							<img src="images/benefit-3.png" alt="" />
+						</div>
+						<div class="text">
+							<p><strong>Быстрый вывод средств!</strong></p>
+							<p>Гарантируем быстрый вывод прибыли</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- =/benefits -->
+		</div>
 	</div>
-</footer>
+	<!-- =/section1 -->
+
+
+	<!-- =section2 video-->
+	<div id="section2" class="video section">
+		<div class="container">
+			<div class="title">Просчитайте рынок!</div>
+			<div class="subtitle">Зарабатывайте на росте!</div>
+			<div class="increase">
+				<div class="left">
+					<div class="video_wrapper">
+						<video src="video\video.mp4"></video>
+					</div>
+				</div>
+				<div class="right">
+					<p>Рост стоимости акций за пол года*:</p>
+					<div class="row">
+						<div class="cell">34.63%</div>
+						<div class="cell">22.4%</div>
+					</div>
+					<div class="row">
+						<div class="cell">12.75%</div>
+						<div class="cell">9.21%</div>
+					</div>
+					<button type="button" class="btn">ПОПРОБОВАТЬ</button>
+				</div>
+			</div>
+			<div class="remark text-center">*Индикативная разница курсов акций в период с 1 мая по 1 ноября 2016 года.</div>
+		</div>
+	</div>
+	<!-- =/section2 -->
+</div>
 
 <script src="http://ajax.microsoft.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/jquery.validate.min.js"><\/script>')</script>
+<script src="js/jquery.fullPage.min.js"></script>
 <script src="js/engine.js"></script>
 </body>
 </html>

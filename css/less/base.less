@@ -5,11 +5,11 @@ header, section, footer, aside, nav, article {display:block}
 ul{list-style:none}
 @color1:#000;
 @color2:#fff;
+@color3:#495051;
+@color4:#ffd454;
+@color5:#e6e6e6;
+@color6:#ffd055;
 
-@color3:#f4f4f4;
-@color4:#1a237e;
-@color5:#666;
-@color6:#ff5722;
 @color7:#80bbde;
 @color8:#292929;
 
@@ -28,20 +28,17 @@ ul{list-style:none}
 }
 
 html {
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  // font-size: 62.5%
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	font-size: 62.5%
 }
 
 
 body{
-	display: flex;
-	display: -webkit-flex;
+	font-family: Arial;
 	font-display: swap;
-	flex-flow: column;
-	height: 100vh;
 	font-size:10px;
-	font-size: 1.4rem;
+	font-size: 1.6rem;
 }
 
 html, body{
@@ -63,13 +60,8 @@ input::-moz-focus-inner{
 }
 
 
-.outerwrapper{
-	-webkit-flex: 1;
-	flex: 1;
-}
-
 /*** standart classes *****/
-p{line-height:16px}
+p{}
 a{color:#020000}
 h1{font-size:2.5rem}
 h2{font-size:2.4rem}
@@ -83,21 +75,6 @@ input::-moz-focus-inner{
 	padding: 0;
 }
 
-@font-face {
-	font-family: 'ucb';
-	src: url('../fonts/univers_condensed_bold.eot');
-	src: url('../fonts/univers_condensed_bold.eot?#iefix') format('embedded-opentype'),
-		 url('../fonts/univers_condensed_bold.woff') format('woff'),
-		 url('../fonts/univers_condensed_bold.ttf') format('truetype'),
-		 url('../fonts/univers_condensed_bold.svg#univers_condensedbold') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
-.ucb{font-family: 'ucb'}
-
-.outerwrapper{
-}
 
 .tdn{
 	text-decoration: none;
@@ -128,74 +105,82 @@ input::-moz-focus-inner{
 
 
 .form-control {
-   border: 1px solid @color3;
-   border-radius: 0;
-   margin-top: 0.6rem;
-	font-size: 16px;
+	.font-size(1.6);
+	.rounded(4.8rem);
+	border: 2px solid @color5;
+	height: 4.8rem;
+	padding-left: 2.8rem;
+	padding-right: 2.8rem;
+	width: 30rem;
 	&:focus,
 	&:active{
-		border-color: @color5;
-		box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(222, 72, 111, 0.3)
+		// border-color: @color5;
 	}
 }
 
 
-/* =header
----------------------------*/
-header{
+.container,
+.containerw{
+	margin-left: auto;
+	margin-right: auto;
 }
 
-/* =/header
----------------------------*/
 
 
+.flex{
+	.flex;
+}
 
-/* =navigation
----------------------------*/
-/* =/navigation
----------------------------*/
+.flexv{
+	flex-flow: column;
+}
 
+.flexrow{
+	flex-flow: row !important;
+}
 
-.owl-carousel{
-	.owl-controls{
-		position: absolute;
-		width: 100%;
-		top: 115px;
-		.owl-buttons{
-			.owl-prev,
-			.owl-next{
-				background: url(../images/prevnext.png) no-repeat left top;
-				width: 65px;
-				height: 65px;
-				position: absolute;
-			}
-			.owl-prev{
-				left: -110px;
-			}
-			.owl-next{
-				.rotation(180deg);
-				right: -110px;
-			}
-		}
+.btn{
+	.font-size(1.6);
+	.rounded(4.8rem);
+	.transition;
+	background: @color6;
+	background:linear-gradient(to right, #ffce55, #ffe650);
+	border: 2px solid @color2;
+	cursor: pointer;
+	height: 4.8rem;
+	padding-left: 5rem;
+	padding-right: 5rem;
+	text-align: center;
+	text-transform: uppercase;
+	&:hover{
+		background:linear-gradient(to left, #ffce55, #ffe650);
 	}
 }
 
-/* =main
----------------------------*/
-
-.main{
-	aside{
-	}
+.btn-white{
+	background-color: @color2;
+	border-color: @color4;
+	color: @color1;
 }
 
 
 
+.section{
+	border-bottom: 1px solid @color5;
+}
 
+.title{
+	.font-size(3.6);
+	font-weight: bold;
+	text-align: center;
+	padding-bottom: 2.5rem;
+}
 
-/* =footer
----------------------------*/
-footer{
-	@h:40px;
-	height: @h;
-	background: #FFCC00;
+.subtitle{
+	.font-size(3.6);
+	text-align: center;
+}
+
+.text-center{
+	text-align: center;
 }
