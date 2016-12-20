@@ -1,0 +1,220 @@
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+/*---FlexBox---
+  @flex: flex, flex-inline
+  --------------------------*/
+/*---Flexbox Direction---
+  @type: row, column
+  Direction: normal, reverse
+  --------------------------*/
+/*---Flexbox Wrap---
+  @wrap: wrap, nowrap, wrap-reverse
+  --------------------------*/
+/*---Flexbox Justify Content---
+  @justify-content: start, end, center, space-between, space-around
+
+  *FIXME* - Creates duplicate CSS
+  --------------------------*/
+/*---Flexbox Align Items---
+  @align-items: center, baseline, stretch, start, end
+  --------------------------*/
+/*---Flexbox Align Content---
+  @align-items: start, end, center, space-between, space-around
+
+  *FIXME* - Creates duplicate CSS
+  --------------------------*/
+/*** reset ***********/
+html,
+body,
+ul,
+ol,
+li,
+dl,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+a,
+img,
+label {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+header,
+section,
+footer,
+aside,
+nav,
+article {
+  display: block;
+}
+ul {
+  list-style: none;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  display: flex;
+  display: -webkit-flex;
+  font-display: swap;
+  flex-flow: column;
+  height: 100vh;
+  font-size: 10px;
+  font-size: 1.4rem;
+}
+html,
+body {
+  height: 100%;
+}
+*:focus {
+  outline: none;
+}
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+/*** standart classes *****/
+p {
+  line-height: 16px;
+}
+a {
+  color: #020000;
+}
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 2.4rem;
+}
+h3 {
+  font-size: 1.6rem;
+}
+*:focus {
+  outline: none;
+}
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: 'ucb';
+  src: url('../fonts/univers_condensed_bold.eot');
+  src: url('../fonts/univers_condensed_bold.eot?#iefix') format('embedded-opentype'), url('../fonts/univers_condensed_bold.woff') format('woff'), url('../fonts/univers_condensed_bold.ttf') format('truetype'), url('../fonts/univers_condensed_bold.svg#univers_condensedbold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.ucb {
+  font-family: 'ucb';
+}
+.outerwrapper {
+  position: relative;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  padding-bottom: 40px;
+}
+.tdn {
+  text-decoration: none;
+}
+.tdn:hover {
+  text-decoration: underline;
+}
+.tdu {
+  text-decoration: underline;
+}
+.tdu:hover {
+  text-decoration: none;
+}
+.before {
+  content: "";
+  display: block;
+  position: absolute;
+}
+.form-control {
+  border: 1px solid #f4f4f4;
+  border-radius: 0;
+  margin-top: 0.6rem;
+  font-size: 16px;
+}
+.form-control:focus,
+.form-control:active {
+  border-color: #666;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(222, 72, 111, 0.3);
+}
+/* =header
+---------------------------*/
+header {
+  overflow: hidden;
+}
+/* =/header
+---------------------------*/
+/* =navigation
+---------------------------*/
+nav ul {
+  list-style: none;
+}
+nav ul li {
+  float: left;
+}
+/* =/navigation
+---------------------------*/
+.owl-carousel .owl-controls {
+  position: absolute;
+  width: 100%;
+  top: 115px;
+}
+.owl-carousel .owl-controls .owl-buttons .owl-prev,
+.owl-carousel .owl-controls .owl-buttons .owl-next {
+  background: url(../images/prevnext.png) no-repeat left top;
+  width: 65px;
+  height: 65px;
+  position: absolute;
+}
+.owl-carousel .owl-controls .owl-buttons .owl-prev {
+  left: -110px;
+}
+.owl-carousel .owl-controls .owl-buttons .owl-next {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  right: -110px;
+}
+/* =main
+---------------------------*/
+/* =footer
+---------------------------*/
+footer {
+  height: 40px;
+  margin-top: -40px;
+  background: #FFCC00;
+  position: relative;
+}
+::-ms-clear {
+  display: none;
+}
