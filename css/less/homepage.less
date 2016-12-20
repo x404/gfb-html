@@ -157,7 +157,7 @@ header{
 
 
 // =SECTION2
-/* =/video
+/* =video
 ---------------------------*/
 .video{
 	.increase{
@@ -174,8 +174,8 @@ header{
 				width: 544px;
 				position: relative;
 				video{
-					padding-left: 24px;
-					padding-top: 23px;
+					margin-left: 24px;
+					margin-top: 23px;
 				}
 			}
 		}
@@ -209,11 +209,219 @@ header{
 		text-align: center;
 	}
 }
-/* =video
+/* =/video
 ---------------------------*/
 
 
 
+// =SECTION3
+/* =bestspread
+---------------------------*/
+.bestspread{
+	background: @color7;
+	.title{
+		padding-bottom: 0;
+	}
+	.info{
+		.flex;
+		margin-bottom: 5.5rem;
+		padding-top: 5.8rem;
+
+
+		.left,
+		.right{
+			.info_title{
+				.font-size(2.4);
+				.demi;
+				padding-top: 1.5rem;
+				padding-bottom: 1rem;
+			}
+			flex-basis: 50%;
+			padding-bottom: 2rem;
+		}
+		.left{
+			padding-right: 4rem;
+			border-right: 1px solid @color8;
+			.info_title{
+				margin-bottom: -2rem;
+			}
+			.vendors{
+				.flex;
+				.flex-justify-content(space-between);
+				flex-wrap: wrap;
+				img{
+					margin-top: 6rem;
+					margin-right: 2.5rem;
+				}
+			}
+		}
+		.right{
+			padding-left: 4rem;
+		}
+
+		.banks{
+			// overflow: hidden;
+			padding-top: 3.8rem;
+			text-align: center;
+			.clear;
+			
+			.bank{
+				float: left;
+				margin-right: 3.5rem;
+				width: 11rem;
+				&:last-child{
+					margin-right: 0;
+				}
+				p{
+					.demi;
+					color: @color8;
+				}
+				img{
+					vertical-align: top;
+					margin-bottom: 1rem;
+				}
+
+				.sell,
+				.buy{
+					.clear;
+					.font-size(1.2);
+					margin-bottom: .6rem;
+					text-transform: uppercase;
+
+					.title,
+					.field{
+						.font-size(1.2);
+						float: left;
+						height: 3rem;
+						padding-top: .7rem;
+						text-align: center;
+					}
+					.title{
+						.rounded(4px 0 0 4px);
+						background-color: @color8;
+						color: @color2;
+						padding-bottom: 0;
+						width: 4.1rem;
+					}
+					.field{
+						.rounded(0 4px 4px 0);
+						border: 1px solid @color8;
+						width: 6.9rem;
+					}
+					&.active{
+						background: linear-gradient(to right, #7bba5a, #b0d753);
+						color: @color2;
+						padding-top: .4rem;
+						padding-bottom: .4rem;
+						position: relative;
+						
+						.rounded(4px);
+						.title,
+						.field{
+							height: 2.2rem;
+							background: none;
+							border: none;
+							padding-top: .3rem;
+							padding-bottom: .3rem;
+						}
+						.title{
+							border-right: 1px solid @color2;
+						}
+						&:before{
+							.before;
+							background: url(../images/dashed-green.png) no-repeat left top;
+							height: 76px;
+							left: -13px;
+							top: 18px;
+							width: 13px;
+							z-index: 9;
+						}
+					}
+				}
+
+				.sell{
+					margin-top: 1.5rem;
+				}
+			}
+		}
+
+		.quotations{
+			.rounded(5px);
+			background:#7bba5a ;
+			color: @color2;
+			margin-top: 2.4rem;
+			padding: 2rem 3.8rem 3rem;
+			position: relative;
+
+			&:before,
+			&:after{
+				.before;
+				background: url(../images/dashed-white.png) no-repeat left bottom;
+				height: 90px;
+				width: 11px;
+				top: 0;
+				left: 127px;
+			}
+
+			&:after{
+				left: 417px;
+			}
+			
+			.row{
+				overflow: hidden;
+				padding-top: 2rem;
+				.flex;
+				.flex-justify-content(space-between);
+				.flex-align-items(center);
+			}
+			.spread{
+				float: left;
+				margin-left: 2rem;
+				margin-right: 2rem;
+				text-transform: uppercase;
+				letter-spacing: .07rem;
+			}
+
+			.title,
+			b{
+				.demi;
+			}
+
+			.sell,
+			.buy{
+				.font-size(1.6);
+				.flex;
+				.rounded(5px);
+				background-color: @color2;
+				float: left;
+				min-width: 14rem;
+				padding: .5rem 1rem;
+				
+				.title,
+				.field{
+					.font-size(1.6);
+					color: @color9;
+					height: 3rem;
+					padding-bottom: 0;
+					padding-top: .4rem;
+				}
+
+				.title{
+					border-right: 1px solid @color9;
+					padding-right: 1rem;
+					margin-right: .3rem;
+				}
+				.field{
+					padding-left: .3rem;
+					letter-spacing: .07rem;
+				}
+			}
+		}
+	}
+}
+
+/* =/bestspread
+---------------------------*/
 
 
 

@@ -9,9 +9,10 @@ ul{list-style:none}
 @color4:#ffd454;
 @color5:#e6e6e6;
 @color6:#ffd055;
+@color7:#fafafa;
+@color8:#909495;
+@color9:#7bba5a;
 
-@color7:#80bbde;
-@color8:#292929;
 
 
 * {
@@ -65,8 +66,7 @@ html, body{
 	font-weight: normal;
 }
 
-.demi{font-family: "AvenirNextCyr-Demi";}
-
+.demi, strong{font-family: "AvenirNextCyr-Demi"; font-weight: normal;}
 
 
 @font-face {
@@ -220,6 +220,31 @@ input::-moz-focus-inner{
 	text-align: center;
 }
 
+.center-block{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .text-center{
 	text-align: center;
+}
+
+.text-right{
+	text-align: right;
+}
+
+
+
+
+
+.clear{
+	&:before,
+	&:after{
+		content: " ";
+		display: table;
+	}
+	&:after{
+		clear: both;
+	}
 }
