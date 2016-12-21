@@ -260,10 +260,9 @@ header{
 		}
 
 		.banks{
-			// overflow: hidden;
-			padding-top: 3.8rem;
+			overflow: hidden;
+			padding: 3.8rem 0 2.4rem;
 			text-align: center;
-			.clear;
 			
 			.bank{
 				float: left;
@@ -349,7 +348,7 @@ header{
 			.rounded(5px);
 			background:#7bba5a ;
 			color: @color2;
-			margin-top: 2.4rem;
+			// margin-top: 2.4rem;
 			padding: 2rem 3.8rem 3rem;
 			position: relative;
 
@@ -396,6 +395,7 @@ header{
 				float: left;
 				min-width: 14rem;
 				padding: .5rem 1rem;
+				line-height: 1;
 				
 				.title,
 				.field{
@@ -403,7 +403,7 @@ header{
 					color: @color9;
 					height: 3rem;
 					padding-bottom: 0;
-					padding-top: .4rem;
+					padding-top: .7rem;
 				}
 
 				.title{
@@ -424,4 +424,107 @@ header{
 ---------------------------*/
 
 
+/* =payments
+---------------------------*/
+.payments{
+	.title{
+		padding-bottom: 1.5rem;
+	}
+	&_cards{
+		padding-top: 8rem;
+		.flex;
+		.flex-align-items(center);
+		.flex-justify-content(center);
+		img{
+			margin-left: 3rem;
+			margin-right: 3rem;
+		}
+	}
+}
+/* =/payments
+---------------------------*/
 
+
+/* =platforms
+---------------------------*/
+.platforms{
+	background: @color7;
+	.title{
+		padding-bottom: 1.5rem;
+	}
+	img{
+		margin: 5rem auto;
+	}
+}
+/* =/platforms
+---------------------------*/
+
+
+
+/* =platforms
+---------------------------*/
+.news{
+	.title{
+		padding-bottom: 1.5rem;
+	}
+	&_list{
+		.flex;
+		.flex-justify-content(space-between);
+		padding-top: 3.5rem;
+	}
+	.cell{
+		width: 31%;
+		&_wrapper{
+			padding: 2.5rem 2rem 3.5rem;
+			.drop-shadow(0,0,10px,.2);			
+		}
+		.date{
+			.font-size(2.4);
+			.light;
+			color: @color3;
+			border-bottom: 1px solid @color5;
+			padding-top: 1rem;
+			padding-bottom: 2rem;
+		}
+		h4{
+			margin-bottom: 1.7rem;
+			padding-top: 2.5rem;
+			padding-right: 6rem;
+			span{
+				color: @color3;
+			}
+		}
+
+		ul{
+			li{
+				margin-top: .2rem;
+				margin-bottom: .2rem;
+				padding-left: 16px;
+				position: relative;
+				&:before{
+					.before;
+					@r : 6px;
+					.rounded(50%);
+					background-color: @color9;
+					height: @r;
+					left: 0;
+					top: 9px;
+					width: @r;
+				}
+			}
+		}
+
+		.text{
+			padding-left: .6rem;
+			padding-right: .6rem;
+		}
+
+		&:first-child{
+			.date{
+				border-bottom: 2px solid @color9;
+			}
+		}
+	}
+}
+/* =/platforms
+---------------------------*/ 
