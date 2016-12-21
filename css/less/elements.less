@@ -111,6 +111,15 @@
   -o-transition: all @duration @ease;
   transition: all @duration @ease;
 }
+
+.transition-param(@param: left, @duration:0.2s, @ease:ease-out) {
+  -webkit-transition: @param @duration @ease;
+  -moz-transition: @param @duration @ease;
+  -o-transition: @param @duration @ease;
+  transition: @param @duration @ease;
+}
+
+
 .inner-shadow(@horizontal:0, @vertical:1px, @blur:2px, @alpha: 0.4) {
   -webkit-box-shadow: inset @horizontal @vertical @blur rgba(0, 0, 0, @alpha);
   -moz-box-shadow: inset @horizontal @vertical @blur rgba(0, 0, 0, @alpha);
@@ -174,3 +183,4 @@
 	&:focus:-moz-placeholder           {line-height: 100px; transition: line-height 0.5s ease;}
 	&:focus:-ms-input-placeholder      {line-height: 100px; transition: line-height 0.5s ease;}	
 }
+
