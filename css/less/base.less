@@ -12,6 +12,7 @@ ul{list-style:none}
 @color7:#fafafa;
 @color8:#909495;
 @color9:#7bba5a;
+@color10:#b0d753;
 
 
 
@@ -268,3 +269,21 @@ input::-moz-focus-inner{
 	}
 }
 
+
+
+// chat-btn
+.chat-btn{
+	.rounded(50%);
+	.transition;
+	background: @color9 url(../images/chat-btn.png) no-repeat center center;
+	border: none;
+	bottom: 3rem;
+	cursor: pointer;
+	height: 6rem;
+	position: fixed;
+	right: 4rem;
+	width: 6rem;
+	&:hover{
+		background-color: @color10;
+	}
+}
