@@ -1,5 +1,11 @@
 $(document).ready(function(){
-	$('#fullpage').fullpage();
+	setTimeout(function(){
+		document.getElementById('video').play();
+	},1000);
+
+	$('#fullpage').fullpage({
+		responsiveWidth : 768
+	});
 
 	// вызов полной формы регистрации
 	$('button[data-target="#registration"]').click(function(e){

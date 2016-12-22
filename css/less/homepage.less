@@ -125,18 +125,22 @@ header{
 /* =main
 ---------------------------*/
 .main{
-	background: #bebebe url(../images/bg-1.jpg) no-repeat center center / cover;
-	min-height: 730px;
-	flex-grow: 1;
-	position: relative;
-	.flex;
-	.flex-align-items(center);
+	// flex-grow: 1;
+		background: #bebebe url(../images/bg-1.jpg) no-repeat center center / cover;
+
+	&_wrapper{
+		.flex;
+		.flex-align-items(center);
+		position: relative;
+		min-height: 730px;
+		width: 100%;
+	}
 
 	.plate{
 		background:linear-gradient(to right, rgba(123, 186, 90, 0.9), rgba(176, 215, 83, 0.9));
 		color: @color2;
 		margin-left: 50%;
-		padding: 4.5rem 20% 5rem 4rem;
+		padding: 4.5rem 18% 5rem 4rem;
 		width: 50%;
 		.title{
 			.demi;
@@ -177,6 +181,9 @@ header{
 /* =benefits
 ---------------------------*/
 .benefits{
+	flex-grow: 1;
+	.flex-align-items(center);
+	.flex;
 	.container{
 		.flex;
 		.flex-justify-content(space-between);

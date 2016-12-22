@@ -65,16 +65,18 @@
 
 			<!-- =main -->
 			<div class="main">
-				<div class="plate">
-					<p class="title">Инвестиционная платформа для финансового успеха</p>
-					<div class="form">
-						<form action="#" id="plate_form">
-							<input type="text" name="email" class="form-control required email" value="" placeholder="ВВЕДИТЕ E-MAIL" />
-							<button type="button" class="submit btn btn-white">Попробовать</button>
-						</form>
+				<div class="main_wrapper">
+					<div class="plate">
+						<p class="title">Инвестиционная платформа для финансового успеха</p>
+						<div class="form">
+							<form action="#" id="plate_form">
+								<input type="text" name="email" class="form-control required email" value="" placeholder="ВВЕДИТЕ E-MAIL" />
+								<button type="button" class="submit btn btn-white">Попробовать</button>
+							</form>
+						</div>
 					</div>
+					<div class="vsfc"><img src="images/vsfc.png" alt=""></div>
 				</div>
-				<div class="vsfc"><img src="images/vsfc.png" alt=""></div>
 			</div>
 			<!-- =/main -->
 
@@ -124,8 +126,9 @@
 			<div class="increase">
 				<div class="left">
 					<div class="video_wrapper">
-						<video width="500" height="280" autoplay>
-							 <source src="/video/video.mp4" type="video/mp4">
+						<video width="500" height="280" autoplay loop id="video">
+							<source src="/video/video.webm" type="video/webm"></source>
+							<source src="/video/video.mp4" type="video/mp4"></source>
 						</video>
 					</div>
 				</div>
@@ -262,7 +265,7 @@
 					<!-- =/quotations -->
 				</div>
 			</div>
-			<button type="button" class="btn center-block" data-toggle="modal" data-target="#registration">Попробовать</button>
+			<button type="button" class="btn center-block" data-target="#registration">Попробовать</button>
 		</div>
 	</div>
 	<!-- =/section3 bestspread-->
@@ -290,7 +293,7 @@
 			<div class="title">На всех устройствах</div>
 			<div class="subtitle">iOS, Android, Web, Windows, Linux</div>
 			<img src="images/platforms.jpg" alt="" />
-			<button type="button" class="btn center-block" data-toggle="modal" data-target="#registration">Попробовать</button>
+			<button type="button" class="btn center-block" data-target="#registration">Попробовать</button>
 		</div>
 	</div>
 	<!-- =/section5 -->
