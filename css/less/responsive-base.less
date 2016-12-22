@@ -391,7 +391,425 @@
 			width: 80%;
 		}
 	}
+
+	.modal-dialog{
+		margin-top: 15%; 
+	}	
 }
 
-@media (max-width: 545px){
+
+@media (max-width: 740px){
+	header{
+		.wrapper{
+			display: block;
+			text-align: center;
+			height: auto;
+			
+			.logo{
+				width: 100%;
+			}
+
+			.right{
+				margin-top: 2rem;
+				margin-bottom: 2rem;
+				.flex-justify-content(center);
+			}
+		}
+	}
+
+	.benefits{
+		overflow: hidden;
+	}
+}
+
+
+@media (max-width: 667px){
+	.title, .subtitle{
+		padding-bottom: 1rem;
+	}
+
+	.video .increase{
+		padding-top: 3rem;
+	}
+
+	.bestspread{
+		padding-top: 0;
+	}
+}
+
+
+@media (max-width: 655px){
+	.benefits{
+		.container{
+			display: block;
+			.cell{
+				float: left;
+				width: 33%;
+			}
+		}
+	}
+
+	.payments_cards{
+		.flex-justify-content(space-between);
+		padding: 2rem 1rem 1rem;
+		
+		img{
+			margin-left: 0;
+			margin-right: 0;
+		}
+	}
+
+	footer{
+		.row{
+			.left,
+			.right{
+				float: none;
+			}
+
+			.right{
+				padding-top: 3rem;
+			}
+		}
+		.links{
+			margin-top: 3rem;
+		}
+	}
+}
+
+@media (max-width: 620px){
+	.main_wrapper .plate{
+		width: 95%;
+		.title{
+			.font-size(2.8);
+		}
+	}
+}
+
+
+@media (max-width: 600px){
+	.title{
+		padding-bottom: 1.5rem;
+	}
+
+	.video .increase{
+		padding-top: 3rem;
+	}
+
+	.bestspread{
+		padding-top: 0;
+	}
+
+	.bestspread .info .left{
+		padding-bottom: 0;
+		margin-bottom: -2rem;
+	}
+}
+
+
+@media (max-width: 580px){
+	.modal{
+		padding-right: 0 !important;
+	}
+}
+
+
+@media (max-width: 530px){
+	.main{
+		.plate{
+			.title{
+				text-align: center;
+			}
+			.form-control,
+			.submit{
+				width: 100% !important;
+			}
+			.form-control{
+				margin-bottom: 2rem;
+			}
+		}
+	}
+
+	.benefits{
+		.container{
+			padding-bottom: 0;
+			.cell{
+				float: none;
+				margin-bottom: 3rem;
+				width: 100%;
+				img{
+					width: auto;					
+				}
+				&:last-child{
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+
+	.bestspread{
+		padding-top: 0;
+	}
+
+	.modal{
+		&-dialog{
+			margin-top: 25%;
+			width: 90% !important;
+			.form-control{
+				width: 100%;
+			}
+			form{
+				width: 100% !important;
+			}
+		}
+	}
+}
+
+
+@media (max-width: 510px){
+	.payments_cards{
+		display: block;
+		img{
+			margin: 0 2rem 2rem;
+		}
+	}
+
+	.bestspread .info .right{
+		padding-left: 0;
+	}
+}
+
+@media (max-width: 498px){
+	.title,
+	.subtitle{
+		.font-size(2.2);
+	}
+
+	.bestspread .info .right{
+		overflow-x: auto;
+		min-height: 0.01%;
+		width: 100%;
+		margin-bottom: 15px;
+		overflow-y: hidden;
+		-ms-overflow-style: -ms-autohiding-scrollbar;
+		border: 1px solid #dddddd;
+	}
+
+
+	.main{
+		.plate{
+			padding-top: 2.5rem;
+			padding-bottom: 3rem;
+		}
+		.vsfc{
+			bottom: 10px;
+		}
+	}
+}
+
+@media (max-width: 450px){
+	#registration,
+	#auth{
+		.modal{
+			&-dialog{
+				.modal-body{
+					margin-top: 3rem;
+					.form-control{
+						padding-left: 1.5rem;
+						padding-right: 1.5rem;
+					}
+					.submit{
+						padding-left: 0;
+						padding-right: 0;
+					}
+				}
+				.modal-content{
+					padding: 4rem 2rem 4rem 2rem;
+				}
+			}
+			&-title{
+				.font-size(3);
+			}
+		}
+	}
+
+	.video .increase .right{
+		padding-left: 0;
+	}
+
+	.news_list{
+		padding-top: 1rem;
+	}
+
+	.modal-content{
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+
+	.modal-title{
+		.font-size(3);
+	}
+
+	.modal-body h3{
+		.font-size(2.2)
+	}
+}
+
+@media (max-width: 400px){
+	.img-responsive{
+		max-width: 90%;
+	}
+	.title,
+	.subtitle{
+		.font-size(2);
+	}
+
+	
+	header  .right{
+		display: block;
+		.language,
+		.auth{
+			margin-left: 0;
+			margin-top: 2rem;
+			&.in{
+				&:after{
+					left: 50%;
+					right: auto;
+					margin-left: 20px;
+				}
+			}
+		}
+
+		.language_current:before{
+			left: 50%;
+			margin-left: -55px;
+		}
+
+		.language_selector{
+			left: 50%;
+			margin-left: -50px;
+		}
+	}
+
+	.benefits{
+		.container{
+			width: 90%;
+			.cell{
+				display: block;
+			}
+			.pic{
+				float: left;
+				width: 120px;
+			}
+		}
+	}
+
+	.video .increase{
+		.left .video_wrapper{
+			height: 250px;
+			width: 300px;
+			video{
+				height: 155px;
+				margin-left: 13px;
+				margin-top: 12px;
+				width: 275px;
+			}
+		}
+		.right{
+			padding-left: 0;
+		}
+	}
+
+	.bestspread .info .left .vendors{
+		margin-bottom: -5rem;
+	}
+
+	.payments_cards{
+		margin-bottom: -3rem;
+		img{
+			margin-bottom: 3rem;
+		}
+	}
+
+	.platforms{
+		img{
+			.center-block;
+		}
+	}
+
+	.news .cell{
+		width: 90%;
+	}
+
+	footer{
+		.left,
+		.right,
+		.links
+		{
+			text-align: center;
+		}
+		.links{
+			a{
+				display: block;
+				margin-right: 0;
+				margin-bottom: .5rem;
+			}
+		}
+
+		.fp-tableCell{
+			padding-bottom: 1rem !important;
+		}
+	}
+
+
+}
+
+
+
+@media (max-width: 320px){
+	header{
+		.containerw{
+			width: 100%;
+		}
+	}
+
+	.main .plate .title{
+		.font-size(2.4)
+	}
+
+	.benefits .container .cell{
+		text-align: center;
+		.pic{
+			display: none !important;
+		}
+	}
+
+	.video{
+		padding-bottom: 0;
+		.increase{
+			padding-top: 3rem;
+		}
+		.remark{
+			padding-top: 2rem;
+		}
+	}
+
+	.payments_cards{
+		img{
+			display: block;
+			.center-block;
+		}
+	}
+
+	.chat-btn{
+		bottom: 2rem;
+		right: 1.5rem;
+	}
+
+	.modal{
+		&-dialog{
+			.modal-title{
+				font-size: 24px !important;
+			}
+		}
+	}
 }
