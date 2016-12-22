@@ -16,8 +16,7 @@
 <link rel="stylesheet" href="css/jquery.fullPage.css" />
 <link rel="stylesheet" href="css/styles.css" />
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="/js/jquery-1.12.4.min.js"><\/script>')</script>
+<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
 
 <!--[if IE]>
 	<link href="css/styles-ie.css" rel="stylesheet" type="text/css" />
@@ -57,7 +56,7 @@
 							</div>
 						</div>
 						<div class="auth in">
-							<a href="#" title="Вход" class="auth_link">Вход</a>
+							<a href="#" title="Вход" class="auth_link" data-toggle="modal" data-target="#auth">Вход</a>
 						</div>
 					</div>
 				</div>
@@ -69,8 +68,10 @@
 				<div class="plate">
 					<p class="title">Инвестиционная платформа для финансового успеха</p>
 					<div class="form">
-						<input type="text" class="form-control" value="" placeholder="ВВЕДИТЕ E-MAIL" />
-						<button type="button" class="btn btn-white">Попробовать</button> 
+						<form action="#" id="plate_form">
+							<input type="text" name="email" class="form-control required email" value="" placeholder="ВВЕДИТЕ E-MAIL" />
+							<button type="button" class="submit btn btn-white">Попробовать</button>
+						</form>
 					</div>
 				</div>
 				<div class="vsfc"><img src="images/vsfc.png" alt=""></div>
@@ -154,7 +155,7 @@
 							9.21%
 						</div>
 					</div>
-					<button type="button" class="btn">ПОПРОБОВАТЬ</button>
+					<button type="button" class="btn" data-target="#registration">ПОПРОБОВАТЬ</button>
 				</div>
 			</div>
 			<div class="remark text-center">*Индикативная разница курсов акций в период с 1 мая по 1 ноября 2016 года.</div>
@@ -261,7 +262,7 @@
 					<!-- =/quotations -->
 				</div>
 			</div>
-			<button type="button" class="btn center-block">Попробовать</button>
+			<button type="button" class="btn center-block" data-toggle="modal" data-target="#registration">Попробовать</button>
 		</div>
 	</div>
 	<!-- =/section3 bestspread-->
@@ -289,7 +290,7 @@
 			<div class="title">На всех устройствах</div>
 			<div class="subtitle">iOS, Android, Web, Windows, Linux</div>
 			<img src="images/platforms.jpg" alt="" />
-			<button type="button" class="btn center-block">Попробовать</button>
+			<button type="button" class="btn center-block" data-toggle="modal" data-target="#registration">Попробовать</button>
 		</div>
 	</div>
 	<!-- =/section5 -->
@@ -390,7 +391,7 @@
 		<div class="modal-content">
 			<div class="modal-header">
 				<p class="modal-title" id="modal1Label">Условия использования сайта</p>
-				<button type="button" class="close" data-dismiss="modal" aria-label="Заккрыть"><img src="images/close.png" alt="" /></button>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Заккрыть"><img src="images/close.png" alt="Закрыть" /></button>
 			</div>
 			<div class="modal-body">
 				<h3>Lorem ipsum dolor sit amet</h3>
@@ -403,13 +404,13 @@
 	</div>
 </div>
 
-<!-- modal1 -->
+<!-- modal2 -->
 <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modal2Label">
 	<div class="modal-dialog" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
 				<p class="modal-title" id="modal2Label">Заявление о раскрытии рисков</p>
-				<button type="button" class="close" data-dismiss="modal" aria-label="Заккрыть"><img src="images/close.png" alt="" /></button>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Заккрыть"><img src="images/close.png" alt="Закрыть" /></button>
 			</div>
 			<div class="modal-body">
 				<h3>Lorem ipsum dolor sit amet</h3>
@@ -422,13 +423,13 @@
 	</div>
 </div>
 
-<!-- modal1 -->
+<!-- modal3 -->
 <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="modal3Label">
 	<div class="modal-dialog" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
 				<p class="modal-title" id="modal3Label">Борьба с легализацией преступных доходов</p>
-				<button type="button" class="close" data-dismiss="modal" aria-label="Заккрыть"><img src="images/close.png" alt="" /></button>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Заккрыть"><img src="images/close.png" alt="Закрыть" /></button>
 			</div>
 			<div class="modal-body">
 				<h3>Lorem ipsum dolor sit amet</h3>
@@ -441,13 +442,13 @@
 	</div>
 </div>
 
-<!-- modal1 -->
+<!-- modal4 -->
 <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="modal4Label">
 	<div class="modal-dialog" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
 				<p class="modal-title" id="modal4Label">Политика конфиденциальности</p>
-				<button type="button" class="close" data-dismiss="modal" aria-label="Заккрыть"><img src="images/close.png" alt="" /></button>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Заккрыть"><img src="images/close.png" alt="Закрыть" /></button>
 			</div>
 			<div class="modal-body">
 				<h3>Lorem ipsum dolor sit amet</h3>
@@ -460,8 +461,54 @@
 	</div>
 </div>
 
-<script src="http://ajax.microsoft.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/jquery.validate.min.js"><\/script>')</script>
+
+<!-- =auth -->
+<div class="modal fade" id="auth" tabindex="-1" role="dialog" aria-labelledby="authLabel">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<p class="modal-title" id="authLabel">Вход в систему</p>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Заккрыть"><img src="images/close.png" alt="Закрыть" /></button>
+			</div>
+			<div class="modal-body">
+				<form action="#" method="post" id="auth_form">
+					<fieldset>
+						<input name="email" type="text" value="" class="form-control required email" placeholder="Введите E-mail" />
+						<input name="psw" type="password" value="" class="form-control required" placeholder="ВВЕДИТЕ ПАРОЛЬ" />
+						<input type="submit" class="submit btn" value="Войти" />
+					</fieldset>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- =/auth -->
+
+<!-- =registration -->
+<div class="modal fade" id="registration" tabindex="-1" role="dialog" aria-labelledby="registrationLabel">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<p class="modal-title" id="registrationLabel">Регистрация</p>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Заккрыть"><img src="images/close.png" alt="Закрыть" /></button>
+			</div>
+			<div class="modal-body">
+				<form action="#" method="post" id="registration_form">
+					<fieldset>
+						<input name="name" type="text" value="" class="form-control required" placeholder="ВВЕДИТЕ ИМЯ" />
+						<input name="email" type="text" value="" class="form-control required email" placeholder="Введите E-mail" />
+						<input name="psw" type="password" value="" class="form-control required" placeholder="ВВЕДИТЕ ПАРОЛЬ" />
+						<input type="submit" class="submit btn" value="Зарегистрироваться" />
+					</fieldset>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- =/registration -->
+
+
+<script src="js/jquery.validate.min.js"></script>
 <script src="js/jquery.fullPage.min.js"></script>
 <script src="js/modal.js"></script>
 <script src="js/engine.js"></script>

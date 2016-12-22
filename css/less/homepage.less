@@ -642,6 +642,33 @@ footer{
 }
 
 
+#registration,
+#auth{
+	.modal-dialog{
+		background-color: @color2;
+		width: 52rem;
+		form{
+			margin-left: auto;
+			margin-right: auto;
+			width: 32rem;
+			.form-control{
+				width: 100%;
+				margin-bottom: 2rem;
+			}
+		}
+		.modal-body{
+			margin-top: 4.4rem;
+		}
+	}
+}
+
+
+label.error{
+	display: none !important;
+}
+
+
+
 
 
 // modal
@@ -678,6 +705,10 @@ footer{
 
 .modal-open {
 	overflow: hidden;
+
+	#fullpage{
+		filter: blur(5px);		
+	}
 }
 
 
@@ -711,18 +742,7 @@ footer{
 	}
 
 	.submit{
-		.font-size(2.2);
-		.transition;
-		border: 2px solid @color2;
-		color: @color2;
-		cursor: pointer;
-		&:before,
-		& > span{
-			padding: 1.5rem 2.6rem;
-		}
-		&:before{
-			padding-top: 1.7rem;
-		}
+		width: 100%;
 	}
 	.close{
 		.closepopup;
@@ -774,7 +794,8 @@ footer{
 	filter: alpha(opacity=0);
 }
 .modal-backdrop.in {
-	opacity: 0.9;
+
+	opacity: 0.5;
 	filter: alpha(opacity=90);
 }
 .modal-header {

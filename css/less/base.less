@@ -147,17 +147,23 @@ input::-moz-focus-inner{
 }
 
 
-.form-control {
+.form-control{
+	.demi;
 	.font-size(1.6);
 	.rounded(4.8rem);
 	border: 2px solid @color5;
+	letter-spacing: .15rem;
 	height: 4.8rem;
+	line-height: 1;
 	padding-left: 2.8rem;
 	padding-right: 2.8rem;
 	width: 30rem;
-	&:focus,
-	&:active{
-		// border-color: @color5;
+	.transition-param(border-color);
+	&::-webkit-input-placeholder {.regular;}
+	&::-moz-placeholder          {.regular;}
+	&:-ms-input-placeholder      {.regular;}
+	&.error{
+		border-color: red !important;
 	}
 }
 
