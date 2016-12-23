@@ -1,3 +1,52 @@
 textarea{overflow:hidden}       
-@media \0screen{
+
+:root .benefits .container .cell{
+	float: left;
+}
+
+.benefits .container .pic,
+.benefits .container .text{
+	float: left;
+}
+
+.benefits .container .pic{
+	width: 120px;
+}
+.benefits .container .text{
+	width: 200px;
+}
+
+
+.video .increase .left,
+.video .increase .right,
+.video .increase .right .row .cell,
+.bestspread .info .left,
+.bestspread .info .right
+{
+	float: left;
+	width: 50%;	
+}
+
+.video .increase {
+	overflow: hidden;
+}
+
+
+.bestspread .info .quotations .sell .title,
+.bestspread .info .quotations .buy .title,
+.bestspread .info .quotations .sell .field,
+.bestspread .info .quotations .buy .field,
+.news .cell
+{
+	float: left;	
+}
+
+.bestspread .info .banks .bank .sell.active,
+.bestspread .info .banks .bank .buy.active{
+	background: #7bba5a;
+}
+
+.news .cell{
+	width: 30%;
+	margin-right: 3%;
 }
