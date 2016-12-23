@@ -12,7 +12,7 @@
 <meta name="robots" content="noindex,nofollow" />
 
 <title>Главная</title>
-<!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"> -->
+<!-- <link rel="stylesheet" href="css/bootstrap.css" /> -->
 <link rel="stylesheet" href="css/jquery.fullPage.css" />
 <link rel="stylesheet" href="css/styles.css" />
 
@@ -70,12 +70,12 @@
 						<p class="title">Инвестиционная платформа для финансового успеха</p>
 						<div class="form">
 							<form action="#" id="plate_form">
-								<input type="text" name="email" class="form-control required email" value="" placeholder="ВВЕДИТЕ E-MAIL" />
+								<input type="email" name="email" class="form-control required email" value="" placeholder="ВВЕДИТЕ E-MAIL" />
 								<button type="button" class="submit btn btn-white">Попробовать</button>
 							</form>
 						</div>
 					</div>
-					<div class="vsfc"><img src="images/vsfc.png" alt=""></div>
+					<div class="vsfc"><a href="#"  data-toggle="modal" data-target="#modal5"><img src="images/vsfc.png" alt="" /></a></div>
 				</div>
 			</div>
 			<!-- =/main -->
@@ -389,7 +389,7 @@
 </div>
 
 <!-- modal1 -->
-<div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1Label">
+<div class="modal modal-text fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1Label">
 	<div class="modal-dialog" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
@@ -408,7 +408,7 @@
 </div>
 
 <!-- modal2 -->
-<div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modal2Label">
+<div class="modal modal-text fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modal2Label">
 	<div class="modal-dialog" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
@@ -427,7 +427,7 @@
 </div>
 
 <!-- modal3 -->
-<div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="modal3Label">
+<div class="modal modal-text fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="modal3Label">
 	<div class="modal-dialog" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
@@ -446,11 +446,31 @@
 </div>
 
 <!-- modal4 -->
-<div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="modal4Label">
+<div class="modal modal-text fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="modal4Label">
 	<div class="modal-dialog" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
 				<p class="modal-title" id="modal4Label">Политика конфиденциальности</p>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Заккрыть"><img src="images/close.png" alt="Закрыть" /></button>
+			</div>
+			<div class="modal-body">
+				<h3>Lorem ipsum dolor sit amet</h3>
+				<p>Сonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+				
+				<h3>Lorem ipsum dolor sit amet</h3>
+				<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- modal5 -->
+<div class="modal modal-text fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="modal4Label">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<p class="modal-title" id="modal4Label">VSFC</p>
 				<button type="button" class="close" data-dismiss="modal" aria-label="Заккрыть"><img src="images/close.png" alt="Закрыть" /></button>
 			</div>
 			<div class="modal-body">
@@ -476,7 +496,7 @@
 			<div class="modal-body">
 				<form action="#" method="post" id="auth_form">
 					<fieldset>
-						<input name="email" type="text" value="" class="form-control required email" placeholder="Введите E-mail" />
+						<input name="email" type="email" value="" class="form-control required email" placeholder="Введите E-mail" />
 						<input name="psw" type="password" value="" class="form-control required" placeholder="ВВЕДИТЕ ПАРОЛЬ" />
 						<input type="submit" class="submit btn" value="Войти" />
 					</fieldset>
@@ -499,7 +519,7 @@
 				<form action="#" method="post" id="registration_form">
 					<fieldset>
 						<input name="name" type="text" value="" class="form-control required" placeholder="ВВЕДИТЕ ИМЯ" />
-						<input name="email" type="text" value="" class="form-control required email" placeholder="Введите E-mail" />
+						<input name="email" type="email" value="" class="form-control required email" placeholder="Введите E-mail" />
 						<input name="psw" type="password" value="" class="form-control required" placeholder="ВВЕДИТЕ ПАРОЛЬ" />
 						<input type="submit" class="submit btn" value="Зарегистрироваться" />
 					</fieldset>

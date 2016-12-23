@@ -15,7 +15,6 @@ ul{list-style:none}
 @color10:#b0d753;
 
 
-
 * {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -80,15 +79,16 @@ html, body{
 .light{font-family: "AvenirNextCyr-Light";}
 
 
-
-
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
 	//ie11
 }
 
-
-
 *:focus{outline:none}
+
+
+input{
+	 -webkit-appearance: none;
+}
 
 input::-moz-focus-inner{
 	border: 0;
@@ -97,7 +97,6 @@ input::-moz-focus-inner{
 
 
 /*** standart classes *****/
-p{}
 a{color:#020000}
 h1{font-size:2.5rem}
 h2{font-size:2.4rem}
@@ -152,6 +151,7 @@ input::-moz-focus-inner{
 	.demi;
 	.font-size(1.6);
 	.rounded(4.8rem);
+	outline:none;
 	border: 2px solid @color5;
 	letter-spacing: .15rem;
 	height: 4.8rem;

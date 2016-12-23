@@ -14,6 +14,9 @@
 	}
 }
 
+
+
+
 @media (min-width: 1100px){
 
 	.container{
@@ -55,21 +58,62 @@
 
 @media (max-width: 1450px){
 	.main{
+		.flex;
+		flex-grow: 1;
 		.plate{
 			padding-right: 7%;
+		}
+	}
+	.main_wrapper{
+		min-height: 0;
+	}
+	.benefits{
+		flex-grow: 0;
+	}
+
+	.modal-text{
+		.modal-dialog{
+			margin-top: 2rem;
 		}
 	}
 }
 
 
+
 @media (max-width: 1366px){
 	.main_wrapper{
 		min-height: 0;
-		height: 480px;
+		height: auto;		
 		.plate{
 			padding-right: 2rem;
 			padding-left: 3rem;
 		}
+	}
+	.benefits{
+		.container{
+			.cell{
+				.text{
+					.font-size(1.5)
+				}
+			}
+		}
+	}
+
+	.video{
+		.title{
+			padding-bottom: .5rem;
+		}
+		.increase{
+			padding-top: 2rem;
+		}
+		.remark{
+			padding-top: 1.5rem;
+		}
+	}
+
+	.bestspread .info{
+		padding-top: 2rem;
+		margin-bottom: 2rem;
 	}
 }
 
@@ -182,9 +226,103 @@
 }
 
 @media (max-width: 1024px){
+	.title,
+	.subtitle{
+		.font-size(3.4);
+	}
+	.title{
+		padding-bottom: 0;
+	}
 	.main_wrapper .plate{
 		margin-left: 35%;
 		width: 65%;
+	}
+
+	.video{
+		.increase{
+			padding-top: 3rem;
+			.left .video_wrapper{
+				background-size: contain;
+				height: 390px;
+				width: 450px;
+				video{
+					margin-left: 5px;
+					margin-top: 18px;
+					height: 233px;
+					width: 441px;
+				}
+			}
+		}
+		.remark{
+			padding-top: 2rem;
+		}
+	}
+
+	.bestspread .info{
+		margin-bottom: 1rem;
+		padding-top: 2rem;
+		.left .vendors img{
+			margin-top: 3.5rem;
+		}
+		.banks{
+			padding-top: 1rem;
+			padding-bottom: 1rem;
+		}
+	}
+
+	.platforms img{
+		margin: 2rem auto;
+	}
+
+	.news{
+		&_list{
+			padding-top: 1rem;
+		}
+		.cell_wrapper{
+			padding-top: 1rem;
+			padding-bottom: 1rem;
+		}
+		.cell{
+			.date{
+				padding-bottom: 1rem;
+			}
+			h4{
+				padding-top: 1rem;
+			}
+			.text{
+				.font-size(1.5)
+			}
+		}
+	}
+
+
+	.modal-text{
+		.modal-dialog{
+			margin-top: 1rem;			
+		}
+	}
+}
+
+@media (max-width: 1024px) and (max-height: 600px){
+	.main_wrapper{
+		height: 370px;
+	}
+
+	.benefits .container{
+		padding-top: .6rem;
+		padding-bottom: .6rem;
+		.cell{
+			.pic{
+				padding-right: 1.5rem;
+			}
+			.text{
+				.font-size(1.5)
+			}
+		}
+	}
+
+	.main .vsfc{
+		bottom: 0;
 	}
 }
 
@@ -292,6 +430,10 @@
 
 
 @media (max-width: 768px){
+	#section1 .fp-tableCell{
+		padding-top: 0;
+	}
+
 	.title,
 	.subtitle{
 		.font-size(2.8)
@@ -299,6 +441,12 @@
 
 	.containerw{
 		width: 90%;
+	}
+
+	.fp-section,
+	.fp-slide,
+	.fp-tableCell{
+		height: auto !important;
 	}
 
 
@@ -311,6 +459,11 @@
 			padding-top: 3rem;
 			padding-bottom: 3rem;
 		}
+	}
+
+
+	.benefits .container{
+		padding-bottom: 0;
 	}
 
 	.main_wrapper .plate{
@@ -347,6 +500,13 @@
 			}
 		}
 	}
+
+
+	.payments_cards{
+		padding-top: 5rem;
+		padding-bottom: 3rem;
+	}
+
 
 	.bestspread{
 		padding-top: 3rem;
@@ -392,9 +552,12 @@
 		}
 	}
 
-	.modal-dialog{
-		margin-top: 15%; 
-	}	
+	.modal-text{
+		.modal-dialog{
+			margin-top: 6%;
+			width: 90%;
+		}
+	}
 }
 
 
@@ -419,6 +582,10 @@
 
 	.benefits{
 		overflow: hidden;
+	}
+
+	.main_wrapper{
+		padding-bottom: 20px;
 	}
 }
 
@@ -503,6 +670,9 @@
 		padding-bottom: 0;
 		margin-bottom: -2rem;
 	}
+	.benefits{
+		padding-top: 2rem;
+	}	
 }
 
 
@@ -654,6 +824,22 @@
 	}
 }
 
+
+@media (max-width: 414px){
+	.main_wrapper{
+		height: auto;
+		display: block;
+		padding-top: 5rem;
+	}
+
+	.main .vsfc{
+		text-align: center;
+		margin-top: 3rem;
+		position: static;
+	}
+}
+
+
 @media (max-width: 400px){
 	.img-responsive{
 		max-width: 90%;
@@ -759,8 +945,6 @@
 			padding-bottom: 1rem !important;
 		}
 	}
-
-
 }
 
 
@@ -810,6 +994,9 @@
 			.modal-title{
 				font-size: 24px !important;
 			}
+		}
+		.modal-content{
+			padding-bottom: 2rem;
 		}
 	}
 }
