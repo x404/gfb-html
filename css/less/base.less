@@ -176,7 +176,6 @@ input::-moz-focus-inner{
 }
 
 
-
 .flex{
 	.flex;
 }
@@ -214,7 +213,6 @@ input::-moz-focus-inner{
 	border-color: @color4;
 	color: @color1;
 }
-
 
 
 .section{
@@ -279,11 +277,15 @@ input::-moz-focus-inner{
 	border: none;
 	bottom: 3rem;
 	cursor: pointer;
-	height: 6rem;
+	height: 6rem !important;
 	position: fixed;
 	right: 4rem;
-	width: 6rem;
+	width: 6rem !important;
 	&:hover{
 		background-color: @color10;
 	}
+}
+
+#mainElement{
+	display: none !important;	
 }

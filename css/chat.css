@@ -1,0 +1,160 @@
+body{
+	font-size: 16px;
+}
+
+
+.ChatFrame{
+	border-radius: 25px;
+	border-width: 20px;
+}
+
+.ChatHeader{
+	background: none;
+	border: none;
+	height: 0;
+}
+
+.CloseButton{
+	background: url('http://gfb.proverstka.com.ua/images/close.png') no-repeat left top;
+	height: 20px;
+	opacity: .4;
+	position: absolute;
+	right: -6px;
+	top: -10px;
+	width: 20px;
+	z-index: 99;
+}
+
+.CloseButton:hover{
+	background-position: left top;
+	opacity: 1;
+}
+
+
+.Avatar{
+	box-shadow: none;
+}
+
+.AvatarPanel{
+	background: none;
+	border: none !important;
+}
+
+.ChatBody{
+	top: 0;
+}
+
+.ChatBody .ActionViewPanel{
+	background: #fff;
+	border: none;
+}
+
+.InfoPanel{
+	background: none;
+	border: none;
+}
+
+.InitOnline .ActionViewPanel{
+	border-radius: 0;
+}
+
+.InitOnline .StatusWidget{
+	padding-left: 8px;
+}
+
+
+.MessageArea textarea{
+	border-radius: 56px;
+	border: 2px solid #e6e6e6;
+	padding-left: 25px;
+	padding-right: 20px;
+	height: 60px;
+}
+
+.ActionsPanel,
+.ChatFooter,
+.DragAndDropFileUploadView,
+.MinimizeButton,
+.PopOutButton,
+.ChatHeader .Title,
+.ChatHeaderIcon,
+.StatusWidget .StatusIcon
+{
+	display: none !important;
+}
+
+.messagesPanel{
+	border-radius: 20px;
+	display: block;
+	padding: 5px 30px;
+	line-height: 1.5;
+}
+
+.messagesPanel .MessageNotification {
+	display: -webkit-box;
+	display: -moz-box;
+	display: flex;
+	-ms-flex-align: center;
+	-webkit-box-align: center;
+	-moz-box-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+
+
+
+.messageBody{
+	order: 0;
+	flex: 1;
+	margin-right: 10px;
+}
+
+.messagesPanel .messageTime{
+	order: 1;
+	margin-right: 0
+}
+
+
+.MessagesPanel .chatMessagesGroup{
+	border-top: none;
+	flex: 1;
+}
+
+.chatMessagesGroupMe .messagesPanel{
+	background: #fafafa;
+	color: @color1;
+}
+
+.chatMessagesGroupAgent .messagesPanel{
+	background: #d9fac8
+}
+
+
+.AgentRanking .RankingBox{
+	background: #7bba5a;
+}
+
+.InfoPanel .TicketInfoPanel{
+	padding-top: 0;
+}
+
+.TicketInfoPanel .EndChatButton{
+	margin-top: 0 !important;
+	position: static;
+}
+
+.InfoPanel .BottomPanel .buttonText{
+	position: relative;
+	top: 5px;
+}
+
+.TextMain, .TicketInfoPanel .ChatWithName,
+.TextSub, .TicketInfoPanel .ChatWithLabel{
+	text-shadow: 0;
+}
+
+
+.RatingButton.ImLeButton{
+	float: left;
+	margin-right: 10px;	
+}
