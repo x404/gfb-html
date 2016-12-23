@@ -1,52 +1,55 @@
 textarea{overflow:hidden}       
 
 :root .benefits .container .cell{
-	float: left;
+	float: left\9;
 }
 
-.benefits .container .pic,
-.benefits .container .text{
-	float: left;
+:root .benefits .container .pic,
+:root .benefits .container .text{
+	float: left\9;
 }
 
-.benefits .container .pic{
-	width: 120px;
+:root .benefits .container .pic{
+	width: 120px\9;
 }
-.benefits .container .text{
-	width: 200px;
+:root .benefits .container .text{
+	width: 200px\9;
 }
 
-
-.video .increase .left,
-.video .increase .right,
-.video .increase .right .row .cell,
-.bestspread .info .left,
-.bestspread .info .right
+:root .video .increase .left,
+:root .video .increase .right,
+:root .video .increase .right .row .cell,
+:root .bestspread .info .left,
+:root .bestspread .info .right
 {
-	float: left;
-	width: 50%;	
+	float: left\9;
+	width: 50%\9;	
 }
 
-.video .increase {
-	overflow: hidden;
+:root .video .increase {
+	overflow: hidden\9;
 }
 
 
-.bestspread .info .quotations .sell .title,
-.bestspread .info .quotations .buy .title,
-.bestspread .info .quotations .sell .field,
-.bestspread .info .quotations .buy .field,
-.news .cell
+:root .bestspread .info .quotations .sell .title,
+:root .bestspread .info .quotations .buy .title,
+:root .bestspread .info .quotations .sell .field,
+:root .bestspread .info .quotations .buy .field,
+:root .news .cell
 {
-	float: left;	
+	float: left\9;	
 }
 
-.bestspread .info .banks .bank .sell.active,
-.bestspread .info .banks .bank .buy.active{
-	background: #7bba5a;
+:root .bestspread .info .banks .bank .sell.active,
+:root .bestspread .info .banks .bank .buy.active{
+	background: #7bba5a\9;
 }
 
-.news .cell{
-	width: 30%;
-	margin-right: 3%;
+:root .news .cell{
+	width: 30%\9;
+	margin-right: 3%\9;
+}
+
+:root .video .increase .right .row{
+	overflow: hidden\9;
 }
