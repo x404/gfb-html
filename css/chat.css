@@ -2,7 +2,6 @@ body{
 	font-size: 16px;
 }
 
-
 .ChatFrame{
 	border-radius: 25px;
 	border-width: 20px;
@@ -62,7 +61,6 @@ body{
 	padding-left: 8px;
 }
 
-
 .MessageArea textarea{
 	border-radius: 56px;
 	border: 2px solid #e6e6e6;
@@ -102,7 +100,6 @@ body{
 }
 
 
-
 .messageBody{
 	order: 0;
 	flex: 1;
@@ -113,7 +110,6 @@ body{
 	order: 1;
 	margin-right: 0
 }
-
 
 .MessagesPanel .chatMessagesGroup{
 	border-top: none;
