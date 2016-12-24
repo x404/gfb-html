@@ -4,9 +4,7 @@ $(document).ready(function(){
 	},1000);
 
 	$('#fullpage').fullpage({
-		// scrollOverflow: true,
 		responsiveWidth : 770
-		// scrollBar:true 
 	});
 
 	// вызов полной формы регистрации
