@@ -10,6 +10,13 @@ Less файлы/каталоге нужны только в верстке, пр
 
 ---------------------------------------------------------
 
+__Чат Live__
+
+[https://profitcenterfx.ladesk.com/agent](https://profitcenterfx.ladesk.com/agent)
+В каталоге css есть файл chat.css - в нем css правила для кастомизации чата, вставлялись на сайте чата. Файл на боевом сервере можно смело удалять, т.к. в верстке не используется.
+
+---------------------------------------------------------
+
 __Используемые в проекте js плагины__
 *  Fullpage [http://alvarotrigo.com/fullPage/](http://alvarotrigo.com/fullPage/)
 * Валидация полей ввода в формах jquery validation [http://jqueryvalidation.org/](http://jqueryvalidation.org/)
