@@ -3,6 +3,33 @@
 }
 
 
+.ie10{
+	.benefits{
+		overflow: hidden;
+		display: block;
+		.container{
+			display: block;
+			.cell{
+				display: block;
+				float: left;
+				width: 33%;
+				.pic{
+					float: left;
+				}
+				.text{
+					float: left;
+					width: ~"calc(100% - 155px)";
+				}
+			}
+		}
+	}
+}
+
+
+_:-ms-lang(x), .main .vsfc{
+	bottom: 50px;
+}
+
 @media (max-width: 1366px){
 	// edge
 	_:-ms-lang(x), .bestspread .info{ 
@@ -14,7 +41,7 @@
 			padding-top: 1.5rem;
 		}
 
-		.left, 
+		.left,
 		.right{
 			.info_title{
 				padding-top: 0;
@@ -23,8 +50,82 @@
 	}
 }
 
+@media (max-width: 1300px){
+	_:-ms-lang(x), .benefits{
+		display: block;
+		.container{
+			overflow: hidden;
+			display: block;
+			.cell{
+				float: left;
+				display: block;
+				width: 33%;
+				.pic{
+					float: left;
+					padding-left: 0;
+					padding-right: 0;
+					width: 120px;
+				}
+				.text{
+					float: left;
+					width: ~"calc(100% - 120px)";
+				}
+			}
+		}
+	}
 
-// safari
-_::-webkit-:host:not(:root:root), .form-control{
-	// padding-top: .5rem;
+	_:-ms-lang(x), .video .increase .left .video_wrapper{
+		width: 485px;
+		background-size: contain;
+		video{
+			height: 252px;
+			margin-left: 17px;
+			margin-top: 20px;
+			width: 450px;
+		}
+	}
+}
+
+
+@media (max-width: 768px){
+	_:-ms-lang(x), #section1 .flex{
+		display: block;
+	}
+
+	.ie10{
+	.benefits{
+		.container{
+			.cell{
+					float: none;
+					overflow: hidden;
+					padding-top: 2rem;
+					width: 100%;
+					.pic{
+						padding-left: 3rem;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+@media (max-width: 414px){
+	_:-ms-lang(x), .main{
+		padding-bottom: 10px;
+	}
+}
+
+@media (max-width: 320px){
+	.ie10{
+		.benefits{
+			.container{
+				.cell{
+					.text{
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
 }
