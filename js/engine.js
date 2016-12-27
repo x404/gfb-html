@@ -4,8 +4,10 @@ $(document).ready(function(){
 	},1000);
 
 	$('#fullpage').fullpage({
-		responsiveWidth : 770
+		responsiveWidth : 770,
+		autoScrolling : false
 	});
+
 
 	// вызов полной формы регистрации
 	$('button[data-target="#registration"]').click(function(e){
