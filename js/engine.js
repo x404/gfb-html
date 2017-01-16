@@ -5,7 +5,11 @@ $(document).ready(function(){
 
 	$('#fullpage').fullpage({
 		responsiveWidth : 770,
-		autoScrolling : false
+		autoScrolling : true,
+		fitToSection : false,
+		scrollBar : true,
+		normalScrollElements: '#section1, #section2, #section3, #section4, #section5, #section6, #section7',
+		bigSectionsDestination : 'bottom'
 	});
 
 
