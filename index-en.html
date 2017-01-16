@@ -1,0 +1,537 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>Главная</title>
+<link rel="stylesheet" href="css/jquery.fullPage.css" />
+<link rel="stylesheet" href="css/styles.css" />
+
+<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+<!--[if IE]>
+	<link href="css/styles-ie.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!--[if !IE]><!-->
+<script>if(/*@cc_on!@*/false){document.documentElement.className+=' ie10';}</script>
+<!--<![endif]-->
+</head>
+<body>
+
+<div id="fullpage">
+	<!-- =section1 -->
+	<div id="section1" class="section">
+		<!-- =header -->
+		<div class="flex flexv">
+			<header>
+				<div class="flexrow wrapper containerw">
+					<div class="logo">
+						<img src="images/logo.png" alt="Global Financial Broker" />
+					</div>
+					<div class="right">
+						<a href="skype:GFB_INFO?chat" class="skype">GFB_INFO</a>
+						<div class="language">
+							<div class="language_current">РУССКИЙ</div>
+							<div class="language_selector">
+								<div class="language_selector_wrapper">
+									<a href="#">English</a>
+								</div>
+							</div>
+						</div>
+						<div class="auth in">
+							<a href="#" title="Вход" class="auth_link" data-toggle="modal" data-target="#auth">Вход</a>
+						</div>
+					</div>
+				</div>
+			</header>
+			<!-- =/header -->
+
+			<!-- =main -->
+			<div class="main">
+				<div class="main_wrapper">
+					<div class="plate">
+						<p class="title">Инвестиционная платформа<br> для финансового успеха</p>
+						<div class="form">
+							<form action="#" id="plate_form">
+								<input type="email" name="email" class="form-control required email" value="" placeholder="ВВЕДИТЕ E-MAIL" />
+								<button type="button" class="submit btn btn-white">Попробовать</button>
+							</form>
+						</div>
+					</div>
+					<div class="vsfc"><a href="#"  data-toggle="modal" data-target="#modal5"><img src="images/vsfc.png" width="132" height="50" alt="" /></a></div>
+				</div>
+			</div>
+			<!-- =/main -->
+
+			<!-- =benefits -->
+			<div class="benefits">
+				<div class="container">
+					<div class="cell">
+						<div class="pic">
+							<img src="images/benefit-1.png" alt="" />
+						</div>
+						<div class="text">
+							<p><strong>Моментальное исполнение!</strong></p>
+							<p>Самое быстрое исполнение на рынке!</p>
+						</div>
+					</div>
+					<div class="cell">
+						<div class="pic">
+							<img src="images/benefit-2.png" alt="" />
+						</div>
+						<div class="text">
+							<p><strong>Точнейший прогноз!</strong></p>
+							<p>Уникальные возможности прогнозирования тренда</p>
+						</div>
+					</div>
+					<div class="cell">
+						<div class="pic">
+							<img src="images/benefit-3.png" alt="" />
+						</div>
+						<div class="text">
+							<p><strong>Быстрый вывод средств!</strong></p>
+							<p>Гарантируем быстрый вывод прибыли</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- =/benefits -->
+		</div>
+	</div>
+	<!-- =/section1 -->
+
+
+	<!-- =section2 video-->
+	<div id="section2" class="video section fp-auto-height">
+		<div class="container">
+			<div class="title">Просчитайте рынок!</div>
+			<div class="subtitle">Зарабатывайте на росте!</div>
+			<div class="increase">
+				<div class="left">
+					<div class="video_wrapper">
+						<video width="500" height="280" autoplay loop id="video" data-autoplay>
+							<source src="/video/video.webm" type="video/webm">
+							<source src="/video/video.mp4" type="video/mp4">
+						</video>
+					</div>
+				</div>
+				<div class="right">
+					<p>Рост стоимости акций за полгода*:</p>
+					<div class="row">
+						<div class="cell">
+							<img src="images/hp.png" alt="hp" />
+							<img src="images/up.gif" alt="" />
+							34.63%
+						</div>
+						<div class="cell">
+							<img src="images/microsoft.png" alt="microsoft" />
+							<img src="images/up.gif" alt="" />
+							22.4%
+						</div>
+					</div>
+					<div class="row">
+						<div class="cell">
+							<img src="images/google.png" alt="google" />
+							<img src="images/up.gif" alt="" />
+							12.75%
+						</div>
+						<div class="cell">
+							<img src="images/fb.png" alt="facebook" />
+							<img src="images/up.gif" alt="" />
+							9.21%
+						</div>
+					</div>
+					<button type="button" class="btn" data-target="#registration">ПОПРОБОВАТЬ</button>
+				</div>
+			</div>
+			<div class="remark text-center">*Индикативная разница курсов акций в период с 1 мая по 1 ноября 2016 года.</div>
+		</div>
+	</div>
+	<!-- =/section2 -->
+
+
+	<!-- =section3 bestspread-->
+	<div id="section3" class="bestspread section fp-auto-height">
+		<div class="container">
+			<div class="title">Мы работаем с лучшими банками</div>
+			<div class="subtitle">и предоставляем вам лучшие котировки</div>
+			<div class="info">
+				<div class="left">
+					<p class="info_title text-right">Наши поставщики ликвидности</p>
+					<div class="vendors">
+						<img src="images/vendors/commerzbank.jpg" width="198" height="29" alt="commerzbank"/>
+						<img src="images/vendors/nowura.jpg" width="140" height="29" alt="nowura"/>
+						<img src="images/vendors/creditsuisse.jpg" width="117" height="29" alt="creditsuisse"/>
+						<img src="images/vendors/ubs.jpg" width="70" height="28" alt="ubs"/>
+						<img src="images/vendors/bankofamerike.jpg" width="191" height="28" alt="bankofamerike"/>
+						<img src="images/vendors/societegenerale.jpg" width="185" height="28" alt="societegenerale"/>
+						<img src="images/vendors/morganchase.jpg" width="242" height="26" alt=""/>
+						<img src="images/vendors/citibank.jpg" width="100" height="26" alt="citibank"/>
+						<img src="images/vendors/bnpparibas.jpg" width="117" height="26" alt="bnpparibas"/>
+						<img src="images/vendors/effexcapital.jpg" width="157" height="26" alt="effexcapital"/>
+						<img src="images/vendors/usbancorp.jpg" width="144" height="26" alt="usbancorp"/>
+						<img src="images/vendors/barclays.jpg" width="147" height="26" alt="barclays"/>
+					</div>
+				</div>
+				<div class="right">
+					<p class="info_title">Как мы получаем лучшие котировки</p>
+					<!-- =banks -->
+					<div class="banks">
+						<div class="bank">
+							<img src="images/bag.png" alt="" />
+							<p>BANK #1</p>
+							<div class="sell">
+								<div class="title">SELL</div>
+								<div class="field">1.085<b>40</b></div>
+							</div>
+							<div class="buy">
+								<div class="title">buy</div>
+								<div class="field">1.085<b>49</b></div>
+							</div>
+						</div>
+						<div class="bank">
+							<img src="images/bag.png" alt="" />
+							<p>BANK #2</p>
+							<div class="sell active">
+								<div class="title">SELL</div>
+								<div class="field">1.085<b>41</b></div>
+							</div>
+							<div class="buy">
+								<div class="title">buy</div>
+								<div class="field">1.085<b>49</b></div>
+							</div>
+						</div>
+						<div class="bank">
+							<img src="images/bag.png" alt="" />
+							<p>BANK #3</p>
+							<div class="sell">
+								<div class="title">SELL</div>
+								<div class="field">1.085<b>40</b></div>
+							</div>
+							<div class="buy">
+								<div class="title">buy</div>
+								<div class="field">1.085<b>48</b></div>
+							</div>
+						</div>
+						<div class="bank">
+							<img src="images/bag.png" alt="" />
+							<p>BANK #4</p>
+							<div class="sell">
+								<div class="title">SELL</div>
+								<div class="field">1.085<b>37</b></div>
+							</div>
+							<div class="buy active">
+								<div class="title">buy</div>
+								<div class="field">1.085<b>43</b></div>
+							</div>
+						</div>
+					</div>
+					<!-- =/banks -->
+
+					<!-- =quotations -->
+					<div class="quotations text-center">
+						<img src="images/logo2.png" alt="Global Financial Broker" />
+						<p><strong>котировки нашим клиентам</strong></p>
+
+						<div class="row">
+							<div class="sell">
+								<div class="title">SELL</div>
+								<div class="field">1.085<b>41</b></div>
+							</div>
+							<div class="spread"><b>SPREAD:</b> 0.0000<b>2</b></div>
+							<div class="buy">
+								<div class="title">BUY</div>
+								<div class="field">1.085<b>43</b></div>
+							</div>
+						</div>
+					</div>
+					<!-- =/quotations -->
+				</div>
+			</div>
+			<button type="button" class="btn center-block" data-target="#registration">Попробовать</button>
+		</div>
+	</div>
+	<!-- =/section3 bestspread-->
+
+
+	<!-- =section4 -->
+	<div id="section4" class="payments section text-center fp-auto-height">
+		<div class="container">
+			<div class="title">Пополнение и снятие</div>
+			<div class="subtitle">Выбирайте наиболее удобную вам платежную систему</div>
+			<div class="payments_cards">
+				<img src="images/payments/visa.jpg" width="166" height="50" alt=""/>
+				<img src="images/payments/mastercard.jpg" width="100" height="60" alt=""/>
+				<img src="images/payments/maestro.jpg" width="100" height="60" alt=""/>
+				<img src="images/payments/wiretransfer.jpg" width="90" height="60" alt=""/>
+			</div>
+		</div>
+	</div>
+	<!-- =/section4 -->
+
+
+	<!-- =section5 -->
+	<div id="section5" class="platforms section text-center fp-auto-height">
+		<div class="container">
+			<div class="title">На всех устройствах</div>
+			<div class="subtitle">iOS, Android, Web, Windows, Linux</div>
+			<img src="images/platforms.jpg" alt="" class="img-responsive" />
+			<button type="button" class="btn center-block" data-target="#registration">Попробовать</button>
+		</div>
+	</div>
+	<!-- =/section5 -->
+
+
+	<!-- =section6 -->
+	<div id="section6" class="news section fp-auto-height">
+		<div class="container">
+			<div class="title">Новости компании</div>
+			<div class="news_list">
+				<div class="cell">
+					<div class="cell_wrapper">
+						<p class="date">19 января 2017</p>
+						<div class="text">
+							<h4>Заработала вэб-платформа GFB trader</h4>
+							<p>Теперь клиенты компании могут торговать из любой точки мира с любого устройства без установки программного обеспечения на ПК.</p>
+							<br>
+							<p>Наше программное решение - это:</p>
+							<ul>
+								<li>надежная защита данных;</li>
+								<li>удобный интерфейс;</li>
+								<li>расширенный набор индикаторов для полноценного анализа рынка;</li>
+								<li>возможность торговли в один клик;</li>
+								<li>котировки в режиме реального времени.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="cell">
+					<div class="cell_wrapper">
+						<p class="date">30 августа 2016</p>
+						<div class="text">
+							<h4>Компания получила лицензию <span>№14714</span></h4>
+							<p>позволяющую вести брокерскую деятельность с дополнительными преимуществами для клиентов:</p>
+							<ul>
+								<li>открытие счета без предоставления налоговой декларации;</li>
+								<li>возможность торговли с плечом до 1:500;</li>
+								<li>возможность хеджировать риски за счет торговли встречными позициями;</li>
+								<li>конфиденциальность данных клиентов;</li>
+								<li>отсутствие отчетности в налоговых органах вашей страны.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="cell">
+					<div class="cell_wrapper">
+						<p class="date">14 апреля 2016</p>
+						<div class="text">
+							<h4>Состоялся выпуск нового программного обеспечения</h4>
+							<p>Компания выпустила десктопную версию плтаформы GFB trader, предназначенную для профессионалов трейдинга.</p> <br>
+							<p>Теперь возможностями программного продукта могут воспользоваться опытные трейдеры.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- =/section6 -->
+
+
+	<!-- =footer -->
+	<footer id="section7" class="section fp-auto-height">
+		<div class="containerw">
+			<div class="row">
+				<div class="left">
+					<p>Приложения для десктопа и мобильных платформ</p>
+					<div>
+						<img src="images/platforms/windows.png" width="50" height="50" alt="windows"/>
+						<img src="images/platforms/linux.png" width="42" height="50" alt="linux"/>
+						<img src="images/platforms/apple.png" width="42" height="50" alt="apple"/>
+						<img src="images/platforms/android.png" width="42" height="50" alt="android"/>
+					</div>
+				</div>
+				<div class="right">
+					<img src="images/geotrust.png" alt="geotrust" />
+				</div>
+			</div>
+			<div class="links">
+				<a href="/docs/terms_of_use_ru.html" target="_blank">Условия использования сайта</a>
+				<a href="/docs/risk_disclosure_notice_ru.html" target="_blank">Заявление о раскрытии рисков</a>
+				<a href="/docs/anti_money_laundering_ru.html" target="_blank">Борьба с легализацией преступных доходов</a>
+				<a href="/docs/privacy_policy_ru.html" target="_blank">Политика конфиденциальности</a>
+			</div>
+			<div class="remark">
+Контракты на разницу цен (CFD) относятся к категории активов с высокой степенью риска. Торговля с использованием кредитного плеча может привести к потере первоначального депозита. Начиная работать с контрактами на разницу, убедитесь, что вы осознаете риски, с которыми сопряжена торговля CFD. <br>
+Информация на этой странице не предназначена для резидентов Соединенных Штатов и Новой Зеландии и не предполагает распространения или использования кем либо в стране или юрисдикции, где распространение или использование такой информации запрещены местным регулированием. <br>
+Название и логотип Global Financial Broker или GFB являются зарегистрированными товарными знаками компании Worldwide Markets Limited. Компания имеет право на эксклюзивное использование данных товарных знаков на территории Вануату и за ее пределами. <br>
+Сайт управляется Worldwide Markets Limited, регулируемой законом о дилерах по операциям с ценными бумагами VFSC, номер регистрации 14714.
+			</div>
+		</div>
+	</footer>
+	<!-- =/footer -->
+</div>
+<div id="outdated"></div>
+
+<!-- modal1 -->
+<div class="modal modal-text fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1Label">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<p class="modal-title" id="modal1Label">Условия использования сайта</p>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Заккрыть"><img src="images/close.png" alt="Закрыть" /></button>
+			</div>
+			<div class="modal-body">
+				<h3>Lorem ipsum dolor sit amet</h3>
+				<p>Сonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+				
+				<h3>Lorem ipsum dolor sit amet</h3>
+				<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- modal2 -->
+<div class="modal modal-text fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modal2Label">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<p class="modal-title" id="modal2Label">Заявление о раскрытии рисков</p>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Заккрыть"><img src="images/close.png" alt="Закрыть" /></button>
+			</div>
+			<div class="modal-body">
+				<h3>Lorem ipsum dolor sit amet</h3>
+				<p>Сonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+				
+				<h3>Lorem ipsum dolor sit amet</h3>
+				<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- modal3 -->
+<div class="modal modal-text fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="modal3Label">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<p class="modal-title" id="modal3Label">Борьба с легализацией преступных доходов</p>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Заккрыть"><img src="images/close.png" alt="Закрыть" /></button>
+			</div>
+			<div class="modal-body">
+				<h3>Lorem ipsum dolor sit amet</h3>
+				<p>Сonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+				
+				<h3>Lorem ipsum dolor sit amet</h3>
+				<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- modal4 -->
+<div class="modal modal-text fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="modal4Label">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<p class="modal-title" id="modal4Label">Политика конфиденциальности</p>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Заккрыть"><img src="images/close.png" alt="Закрыть" /></button>
+			</div>
+			<div class="modal-body">
+				<h3>Lorem ipsum dolor sit amet</h3>
+				<p>Сonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+				
+				<h3>Lorem ipsum dolor sit amet</h3>
+				<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- modal5 -->
+<div class="modal modal-text fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="modal4Label">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Заккрыть"><img src="images/close.png" alt="Закрыть" /></button>
+			</div>
+			<div class="modal-body" style="margin: 0">
+			    <img src="/images/license.jpg" style="width: 100%" alt="License">
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- =auth -->
+<div class="modal fade" id="auth" tabindex="-1" role="dialog" aria-labelledby="authLabel">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<p class="modal-title" id="authLabel">Вход в систему</p>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Заккрыть"><img src="images/close.png" alt="Закрыть" /></button>
+			</div>
+			<div class="modal-body">
+				<form action="#" method="post" id="auth_form">
+					<fieldset>
+						<input name="email" type="email" value="" class="form-control required email" placeholder="Введите E-mail" />
+						<input name="psw" type="password" value="" class="form-control required" placeholder="ВВЕДИТЕ ПАРОЛЬ" />
+						<input type="submit" class="submit btn" value="Войти" />
+					</fieldset>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- =/auth -->
+
+<!-- =registration -->
+<div class="modal fade" id="registration" tabindex="-1" role="dialog" aria-labelledby="registrationLabel">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<p class="modal-title" id="registrationLabel">Регистрация</p>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Заккрыть"><img src="images/close.png" alt="Закрыть" /></button>
+			</div>
+			<div class="modal-body">
+				<form action="#" method="post" id="registration_form">
+					<fieldset>
+						<input name="name" type="text" value="" class="form-control required" placeholder="ВВЕДИТЕ ИМЯ" />
+						<input name="email" type="email" value="" class="form-control required email" placeholder="Введите E-mail" />
+						<input name="psw" type="password" value="" class="form-control required" placeholder="ВВЕДИТЕ ПАРОЛЬ" />
+						<input type="submit" class="submit btn" value="Зарегистрироваться" />
+					</fieldset>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- =/registration -->
+
+
+<link rel="stylesheet" property="stylesheet" href="outdatedbrowser/outdatedbrowser.min.css" />
+<script src="outdatedbrowser/outdatedbrowser.min.js"></script>
+
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/jquery.fullPage.min.js"></script>
+<script src="js/modal.js"></script>
+<script src="js/placeholders.min.js"></script>
+<script src="js/engine.js"></script>
+
+<!-- <script type="text/javascript">
+(function(d, src, c) { var t=d.scripts[d.scripts.length - 1],s=d.createElement('script');s.id='la_x2s6df8d';s.async=true;s.src=src;s.onload=s.onreadystatechange=function(){var rs=this.readyState;if(rs&&(rs!='complete')&&(rs!='loaded')){return;}c(this);};t.parentElement.insertBefore(s,t.nextSibling);})(document,
+'https://gfbroker.ladesk.com/scripts/track.js',
+function(e){ LiveAgent.createButton('ff633904', e); });
+</script> -->
+
+</body>
+</html>
