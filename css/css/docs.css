@@ -1,0 +1,100 @@
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+/*** reset ***********/
+html,
+body,
+ul,
+ol,
+li,
+dl,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+a,
+img,
+label {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+header,
+section,
+footer,
+aside,
+nav,
+article {
+  display: block;
+}
+ul {
+  list-style: none;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-size: 62.5%;
+}
+body {
+  font-family: "AvenirNextCyr-Regular", Arial;
+  font-display: swap;
+  font-size: 10px;
+  font-size: 1.6rem;
+}
+html,
+body {
+  height: 100%;
+}
+/* font-family: "MyriadProRegular"; */
+@font-face {
+  font-family: "AvenirNextCyr-Regular";
+  src: url('../fonts/AvenirNextCyr-Regular.woff') format('woff'), url('../fonts/AvenirNextCyr-Regular.ttf') format('truetype'), url('../fonts/AvenirNextCyr-Regular.svg#AvenirNextCyr-Regular') format('svg');
+  font-style: normal;
+  font-weight: normal;
+}
+.regular {
+  font-family: "AvenirNextCyr-Regular";
+}
+@font-face {
+  font-family: "AvenirNextCyr-Demi";
+  src: url('../fonts/AvenirNextCyr-Demi.woff') format('woff'), url('../fonts/AvenirNextCyr-Demi.ttf') format('truetype'), url('../fonts/AvenirNextCyr-Demi.svg#AvenirNextCyr-Demi') format('svg');
+  font-style: normal;
+  font-weight: normal;
+}
+.demi,
+strong {
+  font-family: "AvenirNextCyr-Demi";
+  font-weight: normal;
+}
+@font-face {
+  font-family: "AvenirNextCyr-Light";
+  src: url('../fonts/AvenirNextCyr-Light.woff') format('woff'), url('../fonts/AvenirNextCyr-Light.ttf') format('truetype'), url('../fonts/AvenirNextCyr-Light.svg#AvenirNextCyr-Light') format('svg');
+  font-style: normal;
+  font-weight: normal;
+}
+.light {
+  font-family: "AvenirNextCyr-Light";
+}
+*:focus {
+  outline: none;
+}
